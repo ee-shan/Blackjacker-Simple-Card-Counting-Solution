@@ -1,5 +1,4 @@
-﻿using Blackjacker___Simple_Card_Counting_Solution;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,33 +17,26 @@ namespace Blackjacker___A_Card_Counting_Solution
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "0";
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            int num = Convert.ToInt32(textBox1.Text) + 1;
-            textBox1.Text = num.ToString();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
         {
             int num = Convert.ToInt32(textBox1.Text) - 1;
             textBox1.Text = num.ToString();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 f = new Form2();
-            f.Show();
+            int num = Convert.ToInt32(textBox1.Text) + 1;
+            textBox1.Text = num.ToString();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            textBox1.Text = "0";
         }
     }
 }
