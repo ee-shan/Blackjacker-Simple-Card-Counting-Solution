@@ -17,11 +17,6 @@ namespace Blackjacker___A_Card_Counting_Solution
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int num = Convert.ToInt32(textBox1.Text) - 1;
@@ -37,6 +32,11 @@ namespace Blackjacker___A_Card_Counting_Solution
         private void button3_Click(object sender, EventArgs e)
         {
             textBox1.Text = "0";
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

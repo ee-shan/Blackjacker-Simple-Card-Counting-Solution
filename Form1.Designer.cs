@@ -30,7 +30,6 @@ namespace Blackjacker___A_Card_Counting_Solution
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,19 +40,6 @@ namespace Blackjacker___A_Card_Counting_Solution
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Product Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Info;
-            this.button5.Location = new System.Drawing.Point(308, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "Quit";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label3
             // 
@@ -157,8 +143,6 @@ namespace Blackjacker___A_Card_Counting_Solution
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(101)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(384, 261);
-            this.ControlBox = false;
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -172,6 +156,7 @@ namespace Blackjacker___A_Card_Counting_Solution
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Blackjacker - Simple Card Counting Solution";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -179,8 +164,6 @@ namespace Blackjacker___A_Card_Counting_Solution
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
